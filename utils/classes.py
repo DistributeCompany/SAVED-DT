@@ -607,13 +607,13 @@ class Route:
         self.creation_date = datetime.now()
         self.last_modified = datetime.now()
         self.actors = actors
-        self.georeference = georeference  # List with coordinates of the route
+        self.georeference = georeference  # List with coordinates of the Route
 
         # Custom
-        self.length = length  # Length of the route in meters
+        self.length = length  # Length of the Route in meters
         self.nodes = nodes  # List of NodeIDs
         self.polyline = polyline  # Folium.PolyLine object for visualization
-        self.coordinates = coordinates # List with coordinates of polyline
+        self.coordinates = coordinates # List with coordinates of Folium.PolyLine
 
         Route._instances.append(self)  # Add the new instance to the list of instances
         Route._total_instances += 1  # Increment the total instances counter

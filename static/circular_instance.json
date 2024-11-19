@@ -220,7 +220,7 @@
           "endTime": "",
           "route": "",
           "constraint": {
-            "id": "TW003",
+            "id": "TW004",
             "name": "Arrive at Timberland before certain time",
             "value":{
               "startTime": "2024-01-01T06:25:00Z",
@@ -239,7 +239,27 @@
           "name": "Step 6: Detach chassis",
           "lifecycle": "planned",
           "sequenceNr": 6,
-          "actionType": "DetachTransportEquipment"
+          "transportEquipment": {
+            "entity": {
+            "id": "TRAILER001",
+            "description": "A trailer",
+            "licensePlate": "123-ABC"
+          },
+          "associationType": "inline"
+          },
+          "startTime": "",
+          "endTime": "",
+          "constraint": {
+            "id": "TW001",
+            "name": "Detach trailer before certain time",
+            "value":{
+              "startTime": "2024-01-01T06:00:00Z",
+              "endTime": "2024-01-01T06:15:00Z",
+              "type": "timeWindowConstraint"
+            },
+            "enforceability": "preference"
+          },          
+          "actionType": "detachTransportEquipment"
         },
         "associationType": "inline"
       }
