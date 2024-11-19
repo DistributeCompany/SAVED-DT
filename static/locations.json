@@ -1,0 +1,562 @@
+{
+    "CTT": [
+        {
+            "Sub-Location": "Entrance",
+            "Identifier ": "CTT_E_1",
+            "Latitude ": 52.3235258924051,
+            "Longitude ": 6.63113380202352,
+            "Local x": -1219.08523438,
+            "Local y": -364.68417969
+        },
+        {
+            "Sub-Location": "Tractor Parking 1",
+            "Identifier ": "CTT_TP_1",
+            "Latitude ": 52.3229271502237,
+            "Longitude ": 6.63141817575306,
+            "Local x": -1199.7353125,
+            "Local y": -298.02796875
+        },
+        {
+            "Sub-Location": "Tractor Parking 2",
+            "Identifier ": "CTT_TP_2",
+            "Latitude ": 52.3228954742335,
+            "Longitude ": 6.63142880698262,
+            "Local x": -1199.01195312,
+            "Local y": -294.50166016
+        },
+        {
+            "Sub-Location": "Tractor Parking 3",
+            "Identifier ": "CTT_TP_3",
+            "Latitude ": 52.3228629174477,
+            "Longitude ": 6.63143974139776,
+            "Local x": -1198.26796875,
+            "Local y": -290.87722656
+        },
+        {
+            "Sub-Location": "Tractor Parking 4",
+            "Identifier ": "CTT_TP_4",
+            "Latitude ": 52.3228312386702,
+            "Longitude ": 6.63145039056728,
+            "Local x": -1197.54335938,
+            "Local y": -287.35056641
+        },
+        {
+            "Sub-Location": "Tractor Parking 5",
+            "Identifier ": "CTT_TP_5",
+            "Latitude ": 52.3227995615148,
+            "Longitude ": 6.63146103076682,
+            "Local x": -1196.819375,
+            "Local y": -283.8240625
+        },
+        {
+            "Sub-Location": "Tractor Parking 6",
+            "Identifier ": "CTT_TP_6",
+            "Latitude ": 52.3227670073997,
+            "Longitude ": 6.63147194903599,
+            "Local x": -1196.07640625,
+            "Local y": -280.19994141
+        },
+        {
+            "Sub-Location": "Tractor Parking 7",
+            "Identifier ": "CTT_TP_7",
+            "Latitude ": 52.3227353312948,
+            "Longitude ": 6.63148258744153,
+            "Local x": -1195.35257812,
+            "Local y": -276.67359375
+        },
+        {
+            "Sub-Location": "Semitrailer Parking 1",
+            "Identifier ": "CTT_SP_1",
+            "Latitude ": 52.3217343203513,
+            "Longitude ": 6.63178998174779,
+            "Local x": -1174.43632812,
+            "Local y": -165.2365625
+        },
+        {
+            "Sub-Location": "Semitrailer Parking 2",
+            "Identifier ": "CTT_SP_2",
+            "Latitude ": 52.3217026890136,
+            "Longitude ": 6.63180097895285,
+            "Local x": -1173.68796875,
+            "Local y": -161.71525391
+        },
+        {
+            "Sub-Location": "Semitrailer Parking 3",
+            "Identifier ": "CTT_SP_3",
+            "Latitude ": 52.3216710571049,
+            "Longitude ": 6.63181198333389,
+            "Local x": -1172.93921875,
+            "Local y": -158.19388672
+        },
+        {
+            "Sub-Location": "Semitrailer Parking 4",
+            "Identifier ": "CTT_SP_4",
+            "Latitude ": 52.321638547529,
+            "Longitude ": 6.63182328731253,
+            "Local x": -1172.17039062,
+            "Local y": -154.57482422
+        },
+        {
+            "Sub-Location": "Semitrailer Parking 5",
+            "Identifier ": "CTT_SP_5",
+            "Latitude ": 52.3216077939052,
+            "Longitude ": 6.631833981332,
+            "Local x": -1171.44234375,
+            "Local y": -151.15125
+        },
+        {
+            "Sub-Location": "Semitrailer Parking 6",
+            "Identifier ": "CTT_SP_6",
+            "Latitude ": 52.3215770408083,
+            "Longitude ": 6.63184467535146,
+            "Local x": -1170.7146875,
+            "Local y": -147.72771484
+        },
+        {
+            "Sub-Location": "Semitrailer Parking 7",
+            "Identifier ": "CTT_SP_7",
+            "Latitude ": 52.321544530615,
+            "Longitude ": 6.6318559793301,
+            "Local x": -1169.94554688,
+            "Local y": -144.10859375
+        },
+        {
+            "Sub-Location": "Semitrailer Parking 8",
+            "Identifier ": "CTT_SP_8",
+            "Latitude ": 52.3215128992786,
+            "Longitude ": 6.63186697474116,
+            "Local x": -1169.19734375,
+            "Local y": -140.58731445
+        },
+        {
+            "Sub-Location": "Semitrailer Parking 9",
+            "Identifier ": "CTT_SP_9",
+            "Latitude ": 52.3214821455674,
+            "Longitude ": 6.63187767414262,
+            "Local x": -1168.469375,
+            "Local y": -137.16373047
+        },
+        {
+            "Sub-Location": "Semitrailer Parking 10",
+            "Identifier ": "CTT_SP_10",
+            "Latitude ": 52.3214496358528,
+            "Longitude ": 6.63188898170925,
+            "Local x": -1167.70046875,
+            "Local y": -133.5446582
+        },
+        {
+            "Sub-Location": "Loading Lane Position 1",
+            "Identifier ": "CTT_LLP_1",
+            "Latitude ": 52.3226638875488,
+            "Longitude ": 6.63070027713066,
+            "Local x": -1248.58390625,
+            "Local y": -268.72005859
+        },
+        {
+            "Sub-Location": "Loading Lane Position 2",
+            "Identifier ": "CTT_LLP_2",
+            "Latitude ": 52.3224880291238,
+            "Longitude ": 6.63076039578296,
+            "Local x": -1244.49320312,
+            "Local y": -249.14255859
+        },
+        {
+            "Sub-Location": "Loading Lane Position 3",
+            "Identifier ": "CTT_LLP_3",
+            "Latitude ": 52.3223051383945,
+            "Longitude ": 6.63082290224602,
+            "Local x": -1240.24023438,
+            "Local y": -228.78226562
+        },
+        {
+            "Sub-Location": "Loading Lane Position 4",
+            "Identifier ": "CTT_LLP_4",
+            "Latitude ": 52.3221266413897,
+            "Longitude ": 6.63088390533912,
+            "Local x": -1236.0890625,
+            "Local y": -208.91119141
+        },
+        {
+            "Sub-Location": "Loading Lane Position 5",
+            "Identifier ": "CTT_LLP_5",
+            "Latitude ": 52.3219490250042,
+            "Longitude ": 6.63094461421662,
+            "Local x": -1231.95828125,
+            "Local y": -189.13822266
+        },
+        {
+            "Sub-Location": "Loading Lane Position 6",
+            "Identifier ": "CTT_LLP_6",
+            "Latitude ": 52.3217758014613,
+            "Longitude ": 6.63100383048814,
+            "Local x": -1227.92898438,
+            "Local y": -169.854375
+        },
+        {
+            "Sub-Location": "Loading Lane Position 7",
+            "Identifier ": "CTT_LLP_7",
+            "Latitude ": 52.3216016989096,
+            "Longitude ": 6.63106333559328,
+            "Local x": -1223.87976562,
+            "Local y": -150.47273438
+        },
+        {
+            "Sub-Location": "Loading Lane Position 8",
+            "Identifier ": "CTT_LLP_8",
+            "Latitude ": 52.3214249587512,
+            "Longitude ": 6.63112373769719,
+            "Local x": -1219.76984375,
+            "Local y": -130.79753906
+        },
+        {
+            "Sub-Location": "Exit ",
+            "Identifier ": "CTT_EX_1",
+            "Latitude ": 52.3212289074729,
+            "Longitude ": 6.63217568584163,
+            "Local x": -1148.1915625,
+            "Local y": -108.97268555
+        }
+    ],
+    "Bolk": [
+        {
+            "Sub-Location": "Entrance",
+            "Identifier ": "BOL_EN_01",
+            "Latitude ": 52.322017377683,
+            "Longitude ": 6.63347914168028,
+            "Local x": -1059.49953125,
+            "Local y": -196.74751953
+        },
+        {
+            "Sub-Location": "Temporary  Parking 1",
+            "Identifier ": "BOL_TP_01",
+            "Latitude ": 52.3216820304641,
+            "Longitude ": 6.6332873615469,
+            "Local x": -1072.54898438,
+            "Local y": -159.41547852
+        },
+        {
+            "Sub-Location": "Temporary  Parking 2",
+            "Identifier ": "BOL_TP_02",
+            "Latitude ": 52.3217191652135,
+            "Longitude ": 6.63327646301171,
+            "Local x": -1073.29054688,
+            "Local y": -163.54944336
+        },
+        {
+            "Sub-Location": "Docking Gate 1",
+            "Identifier ": "BOL_DG_01",
+            "Latitude ": 52.3217964912184,
+            "Longitude ": 6.63325033523122,
+            "Local x": -1075.06835938,
+            "Local y": -172.15761719
+        },
+        {
+            "Sub-Location": "Docking Gate 2",
+            "Identifier ": "BOL_DG_02",
+            "Latitude ": 52.3218307843329,
+            "Longitude ": 6.63323860966315,
+            "Local x": -1075.86625,
+            "Local y": -175.97525391
+        },
+        {
+            "Sub-Location": "Docking Gate 3",
+            "Identifier ": "BOL_DG_03",
+            "Latitude ": 52.3218650770098,
+            "Longitude ": 6.63322688588909,
+            "Local x": -1076.66390625,
+            "Local y": -179.79283203
+        },
+        {
+            "Sub-Location": "Docking Gate 4",
+            "Identifier ": "BOL_DG_04",
+            "Latitude ": 52.321898489142,
+            "Longitude ": 6.6332154724766,
+            "Local x": -1077.44054688,
+            "Local y": -183.51238281
+        },
+        {
+            "Sub-Location": "Docking Gate 5",
+            "Identifier ": "BOL_DG_05",
+            "Latitude ": 52.3219327820405,
+            "Longitude ": 6.63320374690853,
+            "Local x": -1078.23835938,
+            "Local y": -187.33
+        },
+        {
+            "Sub-Location": "Docking Gate 6",
+            "Identifier ": "BOL_DG_06",
+            "Latitude ": 52.3219670751865,
+            "Longitude ": 6.63319202134047,
+            "Local x": -1079.03625,
+            "Local y": -191.14763672
+        },
+        {
+            "Sub-Location": "Docking Gate 7",
+            "Identifier ": "BOL_DG_07",
+            "Latitude ": 52.3220004887495,
+            "Longitude ": 6.63318059716399,
+            "Local x": -1079.81359375,
+            "Local y": -194.86736328
+        },
+        {
+            "Sub-Location": "Docking Gate 8",
+            "Identifier ": "BOL_DG_08",
+            "Latitude ": 52.3220347799241,
+            "Longitude ": 6.63316888594791,
+            "Local x": -1080.61046875,
+            "Local y": -198.68480469
+        },
+        {
+            "Sub-Location": "Exit ",
+            "Identifier ": "BOL_EX_01",
+            "Latitude ": 52.3220229891876,
+            "Longitude ": 6.6335289412586,
+            "Local x": -1056.1109375,
+            "Local y": -197.37220703
+        }
+    ],
+    "Bleckmann": [
+        {
+            "Sub-Location": "Entrance",
+            "Identifier ": "BLK_EN_01",
+            "Latitude ": 52.3184385736743,
+            "Longitude ": 6.63821105961576,
+            "Local x": -737.52210938,
+            "Local y": 201.64292969
+        },
+        {
+            "Sub-Location": "Temporary  Parking 1",
+            "Identifier ": "BLK_TP_01",
+            "Latitude ": 52.3190020136296,
+            "Longitude ": 6.6411117608188,
+            "Local x": -540.1475,
+            "Local y": 138.92324219
+        },
+        {
+            "Sub-Location": "Temporary  Parking 2",
+            "Identifier ": "BLK_TP_02",
+            "Latitude ": 52.319011566311,
+            "Longitude ": 6.64118656962014,
+            "Local x": -535.05726562,
+            "Local y": 137.85988281
+        },
+        {
+            "Sub-Location": "Docking Gate 1",
+            "Identifier ": "BLK_DG_01",
+            "Latitude ": 52.3190415099765,
+            "Longitude ": 6.64142106573247,
+            "Local x": -519.10125,
+            "Local y": 134.52666016
+        },
+        {
+            "Sub-Location": "Docking Gate 2",
+            "Identifier ": "BLK_DG_02",
+            "Latitude ": 52.3190484912453,
+            "Longitude ": 6.64147572435319,
+            "Local x": -515.38210938,
+            "Local y": 133.74952148
+        },
+        {
+            "Sub-Location": "Docking Gate 3",
+            "Identifier ": "BLK_DG_03",
+            "Latitude ": 52.3190552882832,
+            "Longitude ": 6.64152895360635,
+            "Local x": -511.76015625,
+            "Local y": 132.99291016
+        },
+        {
+            "Sub-Location": "Docking Gate 4",
+            "Identifier ": "BLK_DG_04",
+            "Latitude ": 52.3190620854571,
+            "Longitude ": 6.64158218285952,
+            "Local x": -508.13824219,
+            "Local y": 132.23626953
+        },
+        {
+            "Sub-Location": "Docking Gate 5",
+            "Identifier ": "BLK_DG_05",
+            "Latitude ": 52.3190688827671,
+            "Longitude ": 6.64163540852468,
+            "Local x": -504.5165625,
+            "Local y": 131.47960938
+        },
+        {
+            "Sub-Location": "Docking Gate 6",
+            "Identifier ": "BLK_DG_06",
+            "Latitude ": 52.3190756795277,
+            "Longitude ": 6.64168863598385,
+            "Local x": -500.89476562,
+            "Local y": 130.72301758
+        },
+        {
+            "Sub-Location": "Docking Gate 7",
+            "Identifier ": "BLK_DG_07",
+            "Latitude ": 52.3190824768357,
+            "Longitude ": 6.64174186209752,
+            "Local x": -497.27308594,
+            "Local y": 129.96636719
+        },
+        {
+            "Sub-Location": "Docking Gate 8",
+            "Identifier ": "BLK_DG_08",
+            "Latitude ": 52.3190892740054,
+            "Longitude ": 6.64179509000518,
+            "Local x": -493.65125,
+            "Local y": 129.20973633
+        },
+        {
+            "Sub-Location": "Docking Gate 9",
+            "Identifier ": "BLK_DG_09",
+            "Latitude ": 52.3190962545813,
+            "Longitude ": 6.64184975849289,
+            "Local x": -489.93140625,
+            "Local y": 128.43267578
+        },
+        {
+            "Sub-Location": "Docking Gate 10",
+            "Identifier ": "BLK_DG_10",
+            "Latitude ": 52.3191030515434,
+            "Longitude ": 6.64190298819455,
+            "Local x": -486.30945312,
+            "Local y": 127.67606445
+        },
+        {
+            "Sub-Location": "Docking Gate 11",
+            "Identifier ": "BLK_DG_11",
+            "Latitude ": 52.3191100325969,
+            "Longitude ": 6.64195765354276,
+            "Local x": -482.58980469,
+            "Local y": 126.89895508
+        },
+        {
+            "Sub-Location": "Exit ",
+            "Identifier ": "BLK_EX_01",
+            "Latitude ": 52.3184695422451,
+            "Longitude ": 6.63820196225412,
+            "Local x": -738.14109375,
+            "Local y": 198.19566406
+        }
+    ],
+    "Timberland": [
+        {
+            "Sub-Location": "Entrance",
+            "Identifier ": "TBL_EN_01",
+            "Latitude ": 52.3187044256476,
+            "Longitude ": 6.65879796920483,
+            "Local x": 663.28835938,
+            "Local y": 172.04955078
+        },
+        {
+            "Sub-Location": "Temporary  Parking 1",
+            "Identifier ": "TBL_TP_01",
+            "Latitude ": 52.3182445272308,
+            "Longitude ": 6.66340057131105,
+            "Local x": 976.46664062,
+            "Local y": 223.24314453
+        },
+        {
+            "Sub-Location": "Temporary  Parking 2",
+            "Identifier ": "TBL_TP_02",
+            "Latitude ": 52.3182307801996,
+            "Longitude ": 6.66346588627729,
+            "Local x": 980.91085938,
+            "Local y": 224.77339844
+        },
+        {
+            "Sub-Location": "Docking Gate 1",
+            "Identifier ": "TBL_DG_01",
+            "Latitude ": 52.3183999477815,
+            "Longitude ": 6.66271884595849,
+            "Local x": 930.07945312,
+            "Local y": 205.94255859
+        },
+        {
+            "Sub-Location": "Docking Gate 2",
+            "Identifier ": "TBL_DG_02",
+            "Latitude ": 52.3183880307873,
+            "Longitude ": 6.66277117327938,
+            "Local x": 933.64,
+            "Local y": 207.26910156
+        },
+        {
+            "Sub-Location": "Docking Gate 3",
+            "Identifier ": "TBL_DG_03",
+            "Latitude ": 52.3183761140641,
+            "Longitude ": 6.66282349880627,
+            "Local x": 937.20046875,
+            "Local y": 208.59560547
+        },
+        {
+            "Sub-Location": "Docking Gate 4",
+            "Identifier ": "TBL_DG_04",
+            "Latitude ": 52.3183641984342,
+            "Longitude ": 6.66287581895117,
+            "Local x": 940.76046875,
+            "Local y": 209.92199219
+        },
+        {
+            "Sub-Location": "Docking Gate 5",
+            "Identifier ": "TBL_DG_05",
+            "Latitude ": 52.3183522815675,
+            "Longitude ": 6.66292814896306,
+            "Local x": 944.32125,
+            "Local y": 211.24851562
+        },
+        {
+            "Sub-Location": "Docking Gate 6",
+            "Identifier ": "TBL_DG_06",
+            "Latitude ": 52.3183403657942,
+            "Longitude ": 6.66298046821096,
+            "Local x": 947.88125,
+            "Local y": 212.57492188
+        },
+        {
+            "Sub-Location": "Docking Gate 7",
+            "Identifier ": "TBL_DG_07",
+            "Latitude ": 52.3183284490581,
+            "Longitude ": 6.66303279373785,
+            "Local x": 951.44164062,
+            "Local y": 213.90142578
+        },
+        {
+            "Sub-Location": "Docking Gate 8",
+            "Identifier ": "TBL_DG_08",
+            "Latitude ": 52.3183165331413,
+            "Longitude ": 6.66308511477975,
+            "Local x": 955.00179688,
+            "Local y": 215.22785156
+        },
+        {
+            "Sub-Location": "Docking Gate 9",
+            "Identifier ": "TBL_DG_09",
+            "Latitude ": 52.3183049298963,
+            "Longitude ": 6.66313606341351,
+            "Local x": 958.46851562,
+            "Local y": 216.51945312
+        },
+        {
+            "Sub-Location": "Docking Gate 10",
+            "Identifier ": "TBL_DG_10",
+            "Latitude ": 52.3182930130137,
+            "Longitude ": 6.6631883916314,
+            "Local x": 962.02914062,
+            "Local y": 217.84597656
+        },
+        {
+            "Sub-Location": "Docking Gate 11",
+            "Identifier ": "TBL_DG_11",
+            "Latitude ": 52.3182807829042,
+            "Longitude ": 6.66324209405142,
+            "Local x": 965.68320312,
+            "Local y": 219.20736328
+        },
+        {
+            "Sub-Location": "Exit ",
+            "Identifier ": "TBL_EX_01",
+            "Latitude ": 52.3189571385212,
+            "Longitude ": 6.65902832477079,
+            "Local x": 678.96257812,
+            "Local y": 143.91858398
+        }
+    ]
+}
