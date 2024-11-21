@@ -1,0 +1,246 @@
+{
+    "id": "TRIP0001",
+    "name": "Trip CTT-Timberland",
+    "status": "planned",
+    "transportMode": "road",
+    "vehicle": {
+        "entity": {
+            "id": "AV1",
+            "name": "Autonomous Vehicle 1",
+            "entityType": "vehicle"
+        },
+        "associationType": "inline"
+    },
+    "actors": [
+        {
+            "entity": {
+                "id": "A0001",
+                "name": "CTT"
+            },
+            "roles": [
+                "consignor"
+            ],
+            "associationType": "inline"
+        },
+        {
+            "entity": {
+                "id": "A0002",
+                "name": "Timberland"
+            },
+            "roles": [
+                "consignee"
+            ],
+            "associationType": "inline"
+        }
+    ],
+    "actions": [
+        {
+            "entity": {
+                "id": "ACTION000",
+                "name": "Step 0: Move",
+                "lifecycle": "planned",
+                "sequenceNr": 0,
+                "actionType": "move",
+                "from": {
+                    "entity": {
+                        "id": "CTT_TP_1",
+                        "name": "Tractor Parking 1",
+                        "geoReference": {
+                            "lat": 52.3214496358528,
+                            "lon": 6.63188898170925,
+                            "type": "latLonPointGeoReference"
+                        }
+                    },
+                    "associationType": "inline"
+                },
+                "to": {
+                    "entity": {
+                        "id": "CTT_SP_1",
+                        "name": "Semitrailer Parking 1",
+                        "geoReference": {
+                            "lat": 52.3214496358528,
+                            "lon": 6.63188898170925,
+                            "type": "latLonPointGeoReference"
+                        }
+                    },
+                    "associationType": "inline"
+                },
+                "constraint": {
+                    "id": "TW000",
+                    "name": "Arrive at CTT_SP_1 before certain time",
+                    "value": {
+                        "startTime": "2024-02-04T06:00:00Z",
+                        "endTime": "2024-02-04T06:15:00Z",
+                        "type": "timeWindowConstraint"
+                    },
+                    "enforceability": "preference"
+                }
+            },
+            "associationType": "inline"
+        },
+        {
+            "entity": {
+                "id": "ACTION001",
+                "name": "Step 1: Attach empty chassis",
+                "lifecycle": "planned",
+                "sequenceNr": 1,
+                "actionType": "attachTransportEquipment",
+                "transportEquipment": {
+                    "entity": {
+                        "id": "CHASSIS001",
+                        "description": "A trailer",
+                        "licensePlate": "123-ABC"
+                    },
+                    "associationType": "inline"
+                },
+                "constraint": {
+                    "id": "TW001",
+                    "name": "Attach trailer before certain time",
+                    "value": {
+                        "startTime": "2024-02-04T06:00:00Z",
+                        "endTime": "2024-02-04T06:20:00Z",
+                        "type": "timeWindowConstraint"
+                    },
+                    "enforceability": "preference"
+                }
+            },
+            "associationType": "inline"
+        },
+        {
+            "entity": {
+                "id": "ACTION002",
+                "name": "Step 2: Move",
+                "lifecycle": "planned",
+                "sequenceNr": 2,
+                "actionType": "move",
+                "from": {
+                    "entity": {
+                        "id": "CTT_SP_1",
+                        "name": "Semitrailer Parking 1",
+                        "geoReference": {
+                            "lat": 52.3214496358528,
+                            "lon": 6.63188898170925,
+                            "type": "latLonPointGeoReference"
+                        }
+                    },
+                    "associationType": "inline"
+                },
+                "to": {
+                    "entity": {
+                        "id": "CTT_LLP_1",
+                        "name": "Loading Lane Position 1",
+                        "geoReference": {
+                            "lat": 52.3226638875488,
+                            "lon": 6.63070027713066,
+                            "type": "latLonPointGeoReference"
+                        }
+                    },
+                    "associationType": "inline"
+                },
+                "constraint": {
+                    "id": "TW002",
+                    "name": "Arrive at CTT_LLP_1 before certain time",
+                    "value": {
+                        "startTime": "2024-02-04T06:00:00Z",
+                        "endTime": "2024-02-04T06:25:00Z",
+                        "type": "timeWindowConstraint"
+                    },
+                    "enforceability": "preference"
+                }
+            },
+            "associationType": "inline"
+        },
+        {
+            "entity": {
+                "id": "ACTION003",
+                "name": "Step 3: Load container",
+                "lifecycle": "planned",
+                "sequenceNr": 3,
+                "actionType": "load",
+                "constraint": {
+                    "id": "TW003",
+                    "name": "Load container at CTT_LLP_1 before certain time",
+                    "value": {
+                        "startTime": "2024-02-04T06:00:00Z",
+                        "endTime": "2024-02-04T06:25:00Z",
+                        "type": "timeWindowConstraint"
+                    },
+                    "enforceability": "preference"
+                }
+            },
+            "associationType": "inline"
+        },
+        {
+            "entity": {
+                "id": "ACTION004",
+                "name": "Step 4: Move",
+                "lifecycle": "planned",
+                "sequenceNr": 4,
+                "actionType": "move",
+                "from": {
+                    "entity": {
+                        "id": "CTT_LLP_1",
+                        "name": "Loading Lane Position 1",
+                        "geoReference": {
+                            "lat": 52.3226638875488,
+                            "lon": 6.63070027713066,
+                            "type": "latLonPointGeoReference"
+                        }
+                    },
+                    "associationType": "inline"
+                },
+                "to": {
+                    "entity": {
+                        "id": "TBL_DG_01",
+                        "name": "TBL Docking Gate 1",
+                        "geoReference": {
+                            "lat": 52.3183999477815,
+                            "lon": 6.66271884595849,
+                            "type": "latLonPointGeoReference"
+                        }
+                    },
+                    "associationType": "inline"
+                },
+                "constraint": {
+                    "id": "TW004",
+                    "name": "Arrive at Timberland between certain times",
+                    "value": {
+                        "startTime": "2024-02-04T06:25:00Z",
+                        "endTime": "2024-02-04T06:35:00Z",
+                        "type": "timeWindowConstraint"
+                    },
+                    "enforceability": "preference"
+                }
+            },
+            "associationType": "inline"
+        },
+        {
+            "entity": {
+                "id": "ACTION005",
+                "name": "Step 6: Detach full chassis",
+                "lifecycle": "planned",
+                "sequenceNr": 5,
+                "actionType": "DetachTransportEquipment",
+                "transportEquipment": {
+                    "entity": {
+                        "id": "CHASSIS001",
+                        "description": "A trailer",
+                        "licensePlate": "123-ABC"
+                    },
+                    "associationType": "inline"
+                },
+                "constraint": {
+                    "id": "TW005",
+                    "name": "Detach trailer before certain time",
+                    "value": {
+                        "startTime": "2024-02-04T06:25:00Z",
+                        "endTime": "2024-02-04T06:35:00Z",
+                        "type": "timeWindowConstraint"
+                    },
+                    "enforceability": "preference"
+                }
+            },
+            "associationType": "inline"
+        }
+    ]
+}

@@ -1,0 +1,205 @@
+{
+    "id": "TRIP0004",
+    "name": "Trip Bolk-CTT",
+    "status": "planned",
+    "transportMode": "road",
+    "vehicle": {
+        "entity": {
+            "id": "AV1",
+            "name": "Autonomous Vehicle 1",
+            "entityType": "vehicle"
+        },
+        "associationType": "inline"
+    },
+    "actors": [],
+    "actions": [
+        {
+            "entity": {
+                "id": "ACTION018",
+                "name": "Step 0: Move",
+                "lifecycle": "planned",
+                "sequenceNr": 0,
+                "actionType": "move",
+                "from": {
+                    "entity": {
+                        "id": "BOL_DG_01",
+                        "name": "BOL Docking Gate 1",
+                        "geoReference": {
+                            "lat": 52.3217964912184,
+                            "lon": 6.63325033523122,
+                            "type": "latLonPointGeoReference"
+                        }
+                    },
+                    "associationType": "inline"
+                },
+                "to": {
+                    "entity": {
+                        "id": "BOL_DG_03",
+                        "name": "BOL Docking Gate 3",
+                        "geoReference": {
+                            "lat": 52.3218650770098,
+                            "lon": 6.63322688588909,
+                            "type": "latLonPointGeoReference"
+                        }
+                    },
+                    "associationType": "inline"
+                },
+                "constraint": {
+                    "id": "TW018",
+                    "name": "",
+                    "value": {
+                        "startTime": "2024-02-04T07:19:00Z",
+                        "endTime": "2024-02-04T07:25:00Z",
+                        "type": "timeWindowConstraint"
+                    },
+                    "enforceability": "preference"
+                }
+            },
+            "associationType": "inline"
+        },
+        {
+            "entity": {
+                "id": "ACTION019",
+                "name": "Step 1: Attach chassis",
+                "lifecycle": "planned",
+                "sequenceNr": 1,
+                "actionType": "attachTransportEquipment",
+                "transportEquipment": {
+                    "entity": {
+                        "id": "CHASSIS004",
+                        "description": "A trailer",
+                        "licensePlate": "126-ABC"
+                    },
+                    "associationType": "inline"
+                },
+                "constraint": {
+                    "id": "TW019",
+                    "name": "",
+                    "value": {
+                        "startTime": "2024-02-04T07:19:00Z",
+                        "endTime": "2024-02-04T07:30:00Z",
+                        "type": "timeWindowConstraint"
+                    },
+                    "enforceability": "preference"
+                }
+            },
+            "associationType": "inline"
+        },
+        {
+            "entity": {
+                "id": "ACTION020",
+                "name": "Step 2: Move",
+                "lifecycle": "planned",
+                "sequenceNr": 2,
+                "actionType": "move",
+                "from": {
+                    "entity": {
+                        "id": "BOL_DG_03",
+                        "name": "BOL Docking Gate 3",
+                        "geoReference": {
+                            "lat": 52.3218650770098,
+                            "lon": 6.63322688588909,
+                            "type": "latLonPointGeoReference"
+                        }
+                    },
+                    "associationType": "inline"
+                },
+                "to": {
+                    "entity": {
+                        "id": "CTT_LLP_1",
+                        "name": "Loading Lane Position 1",
+                        "geoReference": {
+                            "lat": 52.3226638875488,
+                            "lon": 6.63070027713066,
+                            "type": "latLonPointGeoReference"
+                        }
+                    },
+                    "associationType": "inline"
+                },
+                "constraint": {
+                    "id": "TW020",
+                    "name": "",
+                    "value": {
+                        "startTime": "2024-02-04T07:19:00Z",
+                        "endTime": "2024-02-04T07:32:00Z",
+                        "type": "timeWindowConstraint"
+                    },
+                    "enforceability": "preference"
+                }
+            },
+            "associationType": "inline"
+        },
+        {
+            "entity": {
+                "id": "ACTION021",
+                "name": "Step 3: Detach chassis",
+                "lifecycle": "planned",
+                "sequenceNr": 3,
+                "actionType": "DetachTransportEquipment",
+                "transportEquipment": {
+                    "entity": {
+                        "id": "CHASSIS004",
+                        "description": "A trailer",
+                        "licensePlate": "126-ABC"
+                    },
+                    "associationType": "inline"
+                },
+                "constraint": {
+                    "id": "TW021",
+                    "name": "",
+                    "value": {
+                        "startTime": "2024-02-04T07:19:00Z",
+                        "endTime": "2024-02-04T07:34:00Z",
+                        "type": "timeWindowConstraint"
+                    },
+                    "enforceability": "preference"
+                }
+            },
+            "associationType": "inline"
+        },
+        {
+            "entity": {
+                "id": "ACTION022",
+                "name": "Step 4: Move",
+                "lifecycle": "planned",
+                "sequenceNr": 4,
+                "actionType": "move",
+                "from": {
+                    "entity": {
+                        "id": "CTT_LLP_1",
+                        "name": "Loading Lane Position 1",
+                        "geoReference": {
+                            "lat": 52.3226638875488,
+                            "lon": 6.63070027713066,
+                            "type": "latLonPointGeoReference"
+                        }
+                    },
+                    "associationType": "inline"
+                },
+                "to": {
+                    "entity": {
+                        "id": "CTT_TP_1",
+                        "name": "Tractor Parking 1",
+                        "geoReference": {
+                            "lat": 52.3214496358528,
+                            "lon": 6.63188898170925,
+                            "type": "latLonPointGeoReference"
+                        }
+                    },
+                    "associationType": "inline"
+                },
+                "constraint": {
+                    "id": "TW022",
+                    "name": "",
+                    "value": {
+                        "startTime": "2024-02-04T07:25:00Z",
+                        "endTime": "2024-02-04T07:36:00Z",
+                        "type": "timeWindowConstraint"
+                    },
+                    "enforceability": "preference"
+                }
+            },
+            "associationType": "inline"
+        }
+    ]
+}
