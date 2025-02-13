@@ -6,6 +6,7 @@ import pandas as pd
 import random
 from datetime import datetime
 import json
+
 def create_trip(actors,vehicle=None):
     """
     Create an instance of the Trip Class.
@@ -19,20 +20,20 @@ def create_trip(actors,vehicle=None):
     """    
 
     # Create instance of Trip Class
-    trip = Trip(name=f"Trip {Trip.get_total_trips()}",actors=actors,vehicle=vehicle) #status defaults to 'requested'
+    trip = Trip(name=f"Trip {Trip.get_total_trips()}",actors=actors,vehicle=vehicle) #status defaults to 'draft'
 
     return trip
 
 def create_actor(location,name=f"Actor {Actor.get_total_actors()}"):
 
-    # Create instance of Actor Class (ASSUMPTION: 1 Actor per 1 Location, could be extended to multiple actors per location or just simply add more locations)
+    # Create instance of Actor Class 
     actor = Actor(location,name=name)
 
     # Link Actor to Location
     location.actors = [actor]
 
-    # Link Location to Actor
-    actor.location = location
+    # Link Location to Actor (NOTE: Currently one Location per Actor)
+    actor.locations = [location]
 
     return [actor]
 
@@ -65,7 +66,7 @@ def create_route(actors,graph,origin,destination):
     
     return route
 
-def create_action(origin=None,destination=None,duration=None,location=None,sequence_nr=None,route=None,trip=None,constraint=None, actiontype='move'):
+def create_action(origin=None,destination=None,duration=None,location=None,sequence_nr=None,route=None,trip=None,constraint=None, action_type='move'):
     '''
     Action 0: from micro-hub to customer
     Action 1: from customer to micro-hub
@@ -74,7 +75,7 @@ def create_action(origin=None,destination=None,duration=None,location=None,seque
     # Create 'move' action from micro-hub to customer
     action = Action(sequence_nr=sequence_nr,
                     name=f"Action {Action.get_total_actions()}",
-                    actiontype=actiontype,
+                    action_type=action_type,
                     _from=origin,
                     _to=destination,
                     location=location,
@@ -117,14 +118,14 @@ def create_location(lat: float, lng: float, type: str,actors=None,actions=None,c
 
     return location, location_marker
 
-def create_vehicles(num_vehicles,type,average_speed=(15.0/3.6),load_time=0,unload_time=0,load_capacities=1):
+def create_vehicles(num_vehicles, type, average_speed=(15.0/3.6), load_time=0, unload_time=0, load_capacities=1):
     if type == 'terminal_tractor':
-        # Get number of already initiated terminal tractors
+        # Get the number of already initiated terminal tractors
         num_terminal_tractors = len(Vehicle.get_by_type(vehicle_type="terminal_tractor"))
 
         if num_terminal_tractors < num_vehicles:
-            for i in range(num_vehicles-num_terminal_tractors):
-                # Initialize Terminal Tractor at appropriate Tractor Parking
+            for i in range(num_vehicles - num_terminal_tractors):
+                # Initialize Terminal Tractor at an appropriate Tractor Parking
 
                 # Get all Tractor Parkings
                 tractor_parkings = Location.get_by_type('tractor_parking')
@@ -133,21 +134,27 @@ def create_vehicles(num_vehicles,type,average_speed=(15.0/3.6),load_time=0,unloa
                 icon_path = 'images/terminal_tractor.png'
                 icon_width = 50
                 custom_icon = CustomIcon(icon_image=icon_path, icon_size=(icon_width, icon_width/2.3))
-                # Create Marker
+                
+                # Create Marker using the next available tractor parking
+                # Updated index: num_terminal_tractors + i ensures that if there are zero tractors,
+                # the first element (index 0) is used.
                 vehicle_marker = Marker(
                     icon=custom_icon,
-                    location=tractor_parkings[num_terminal_tractors+i-1].georeference,
+                    location=tractor_parkings[num_terminal_tractors + i].georeference,
                     popup=f"{type} {Vehicle.get_total_vehicles()}",
                 )               
 
                 # Create instance of Vehicle class
-                Vehicle(name=f"{type} {Vehicle.get_total_vehicles()}",vehicle_type=type,marker=vehicle_marker)
+                Vehicle(name=f"{type} {Vehicle.get_total_vehicles()}",
+                        vehicle_type=type,
+                        marker=vehicle_marker,
+                        average_speed=average_speed)
         elif num_terminal_tractors > num_vehicles:
-                response = Vehicle.delete_last_x(num_terminal_tractors-num_vehicles)
-                if response:
-                    print(f"Deleted {num_terminal_tractors-num_vehicles} {type}")
-                else:
-                    print(f"Did not delete {type}")
+            response = Vehicle.delete_last_x(num_terminal_tractors - num_vehicles)
+            if response:
+                print(f"Deleted {num_terminal_tractors - num_vehicles} {type}")
+            else:
+                print(f"Did not delete {type}")
         else:
             # No changes in number of terminal tractors
             pass
@@ -406,11 +413,12 @@ def create_locations(file_name,filter=None):
                 # Create instance of Location Class
                 loc = Location(
                     georeference=[lat,lng],
-                    type=type,
+                    location_type=type,
                     name=identifier,
                     actors=None,
                     actions=None,
                     constraint=None)
+                
                 
                 if type == 'entrance':
                     custom_icon = create_custom_icon(icon='door-open',color='orange')
@@ -421,17 +429,17 @@ def create_locations(file_name,filter=None):
                 elif type == 'loading_lane':
                     custom_icon = create_custom_icon(icon='grip-lines-vertical',color='green')
                 elif type == 'exit':
-                    custom_icon = create_custom_icon(icon='door-closed',color='grey')
+                    custom_icon = create_custom_icon(icon='door-closed',color='gray')
                 elif type == 'temporary_parking':
-                    custom_icon = create_custom_icon(icon='home',color='yellow')
+                    custom_icon = create_custom_icon(icon='home',color='beige')
                 elif type == 'dock':
-                    custom_icon = create_custom_icon(icon='truck-ramp-box',color='lightblue')
+                    custom_icon = create_custom_icon(icon='truck-ramp-box',color='cadetblue')
                 else:
                     custom_icon = create_custom_icon()
 
                 location_marker = Marker(
                     location=loc.georeference,
-                    popup=f"{loc.name}",
+                    popup = f"<b>Name:</b> {name}<br><b>ID:</b> {loc.name}<br><b>Georeference:</b> [{lat:.6f}, {lng:.6f}]",
                     icon=custom_icon
                     )
                 
