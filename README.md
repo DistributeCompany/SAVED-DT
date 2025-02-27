@@ -4,8 +4,11 @@
 
 - Ensure you have Python 3.7+ installed.
 - Install the required dependencies with the following command:
+
+```bash
   pip install -r requirements.txt
-       
+```
+    
 ## ⚡️ Running the App  
 
 - Launch the app by running the following command:
