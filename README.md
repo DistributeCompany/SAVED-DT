@@ -8,8 +8,11 @@
        
 ## ⚡️ Running the App  
 
-- Launch the app by running the following command: 
+- Launch the app by running the following command:
+
+```bash
   streamlit run Main.py
+```
 
 ## ✨ Acknowledgments
 
